@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 16px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            color: #205b82;
+            font-size: 34px;
+            margin: 0 0 20px;
+        }
+
+        header p {
+            color: #36566b;
+        }
+
+        h2 {
+            color: #205b82;
+            font-size: 26px;
+        }
+
+        .skills-title {
+            background-color: #176092;
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+
+        .skills-title h3 {
+            margin: 0;
+        }
+
+        a {
+            color: #172d65;
+        }
+
+        .timeline-title {
+            text-align: center;
+            margin: 20px 0 16px;
+        }
+
+        table {
+            width: 100%;
+            border: 1px solid #777;
+            border-spacing: 2px;
+        }
+
+        th, td {
+            border: 1px solid #777;
+            padding: 3px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #176092;
+            color: white;
+            text-align: center;
+        }
+
+        .logo {
+            width: 90px;
+            height: 90px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            font-style: italic;
+            margin: auto;
+        }
+
+        .tc {
+            background: linear-gradient(135deg, #0879c9, #2479e9);
+        }
+
+        .da {
+            background: linear-gradient(135deg, #a020a7, #e20b62);
+        }
+
+        .wd {
+            background: linear-gradient(135deg, #009c88, #4cae43);
+        }
+
+        .achievements {
+            padding-left: 22px;
+            margin: 0;
+        }
+
+        fieldset {
+            margin-top: 22px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 30px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            align-items: center;
+            gap: 8px;
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            height: 25px;
+            font-size: 15px;
+        }
+
+        button {
+            color: white;
+            border: none;
+            padding: 5px 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 18px 8px 0 3px;
+        }
+
+        .send {
+            background-color: #176092;
+        }
+
+        .clear {
+            background-color: #c51f46;
+        }
+
+        @media (max-width: 650px) {
+            body {
+                margin: 10px;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            .logo {
+                width: 45px;
+                height: 45px;
+                font-size: 18px;
+            }
+
+            th, td {
+                padding: 2px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Aya Hamdi</h1>
+        <p>Fornt End Devolper</p>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Adipisci aut numquam sit dolores esse quasi quae perferendis,
+            cum aliquid aspernatur possimus in minima assumenda?
+            Nulla sequi quos mollitia dolores quia!
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Magni voluptas accusantium enim laboriosam delectus iure,
+            perspiciatis ea eveniet itaque fugit consequatur et,
+            expedita tenetur accusamus in fuga quidem dignissimos. Magnam.
+        </p>
+    </section>
+
+    <section>
+        <div class="skills-title">
+            <h3>Skills</h3>
+        </div>
+
+        <ul>
+            <li><a href="#">html</a></li>
+            <li><a href="#">css</a></li>
+            <li><a href="#">Javascript</a></li>
+            <li><a href="#">react.js</a></li>
+            <li><a href="#">angulr</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Experience Timeline</h2>
+
+        <p class="timeline-title">
+            Professional Experience Overview
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>company</th>
+                    <th>logo</th>
+                    <th>role</th>
+                    <th>key achievement</th>
+                    <th>dates</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td rowspan="2">techcorp</td>
+                    <td rowspan="2">
+                        <div class="logo tc">TC</div>
+                    </td>
+                    <td>senior full stack developer</td>
+                    <td>
+                        <ul class="achievements">
+                            <li>lead development of web application</li>
+                            <li>mentor junior developers</li>
+                            <li>architect scalable solutions</li>
+                        </ul>
+                    </td>
+                    <td>jan 2023-present</td>
+                </tr>
+
+                <tr>
+                    <td>full stack developer</td>
+                    <td>
+                        <ul class="achievements">
+                            <li>lead development of web application</li>
+                            <li>mentor junior developers</li>
+                            <li>architect scalable solutions</li>
+                        </ul>
+                    </td>
+                    <td>2021-2023</td>
+                </tr>
+
+                <tr>
+                    <td>digital anency pro</td>
+                    <td>
+                        <div class="logo da">DA</div>
+                    </td>
+                    <td>frontend developer</td>
+                    <td>
+                        <ul class="achievements">
+                            <li>lead development of web application</li>
+                            <li>mentor junior developers</li>
+                            <li>architect scalable solutions</li>
+                        </ul>
+                    </td>
+                    <td>2019 - 2020</td>
+                </tr>
+
+                <tr>
+                    <td>web design studio</td>
+                    <td>
+                        <div class="logo wd">WD</div>
+                    </td>
+                    <td>junior web developer</td>
+                    <td>
+                        <ul class="achievements">
+                            <li>lead development of web application</li>
+                            <li>mentor junior developers</li>
+                            <li>architect scalable solutions</li>
+                        </ul>
+                    </td>
+                    <td>2019 - 2020</td>
+                </tr>
+
+                <tr>
+                    <td colspan="5">
+                        total Experience 5+ years in web developer
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Contact Me</h2>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit at repudiandae esse libero magnam quod ab?
+            Molestias fuga animi qui!
+        </p>
+
+        <form>
+            <fieldset>
+                <legend>personal information</legend>
+
+                <div class="form-grid">
+
+                    <div class="form-row">
+                        <label for="firstName">first name</label>
+                        <input type="text" id="firstName" name="firstName">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="lastName">last name</label>
+                        <input type="text" id="lastName" name="lastName">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="phone">phone number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="meetingDate">preferred meeting date:</label>
+                        <input type="text" id="meetingDate" name="meetingDate">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="contactTime">best time to Contact</label>
+                        <input type="text" id="contactTime" name="contactTime">
+                    </div>
+
+                </div>
+            </fieldset>
+
+            <button class="send" type="submit">send massage</button>
+            <button class="clear" type="reset">clear data</button>
+        </form>
+    </section>
+
+</body>
+</html>
